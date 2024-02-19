@@ -6,7 +6,7 @@ To start the application, we use the following commands in the terminal.
 
 
 Aplikacija je razvijena koristeći Angular kao frontend framework, Node.js za backend, i MongoDB kao bazu podataka. 
-Tema aplikacije je rezervacija letova, gdje korisnik može filtrirati letove, odabrati željeni let, i rezervisati ga u korpi.
+Tema aplikacije je rezervacija letova, gde korisnik može filtrirati letove, odabrati željeni let, i rezervisati ga u korpi.
 Aplikacija poseduje i virtualni chat bota koji nam moze pomoci u pronalazenju odredjenog leta.
 Ukoliko zelite i njega mogu vam ga poslati, javite mi se na mail todorjevtic@gmail.com.
 Za pokretanje aplikacije koristimo sledece komande u terminalu.
