@@ -1,0 +1,42 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<div class="glavni">
+  <ul>
+    <li *ngFor="let tickets of tickets">
+      <a routerLink="/tickets/{{tickets.id}}">
+        <img [src]="tickets.imageUrl" [alt]="tickets.avio_prevozinik" />
+        <div class="content">
+          <div class="name">
+            {{tickets.polazna_lokacija}}-{{tickets.odredisna_lokacija}}
+          </div>
+          <span class="favorite {{tickets.favorite?'':'not'}}">
+            ❤
+          </span>
+          <div class="stars">
+            <star-rating [value]="tickets.stars" [totalstars]="5" checkedcolor="#FFBF00" uncheckedcolor="black" size="22px"
+              [readonly]="true">
+            </star-rating>
+          </div>
+          <div class="product-item-footer">
+            <div class="origins">
+              <span *ngFor="let origin of tickets.tags">
+                {{origin}}
+              </span>
+            </div>
+
+            <div class="cook-time">
+              <span>🕒</span>
+              {{tickets.vreme_trajanja_leta_sati}}h:{{tickets.vreme_trajanja_leta_minuti}}m
+            </div>
+          </div>
+
+          <div class="price">
+            <span>
+              {{tickets.cena | currency}}
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AppAvioTickets</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+   <!-- Google Web Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+  <style>
+    .rw-conversation-container .rw-header {
+      background-color: #091E3E;
+    }
+
+    .rw-conversation-container .rw-messages-container .rw-message .rw-client {
+      background-color: #091E3E;
+    }
+
+    .rw-launcher {
+      background-color: #06A3DA;
+    }
+
+    .rw-conversation-container .rw-reply {
+      background-color: #091E3E;
+      border: 1px #091E3E solid;
+    }
+  </style>
+    <script>!(function () {
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+          "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+          // Replace 1.x.x with the version that you want
+          (e.async = !0),
+          (e.onload = () => {
+            window.WebChat.default(
+              {
+                title: 'Ticket assistent',
+                initPayload: '/greet',
+                customData: { language: "en" },
+                socketUrl: "http://localhost:5005",
+                profileAvatar:"./assets/bot.png",
+                showFullScreenButton: true,
+                showMessageDate:true,
+                inputTextFieldHint: 'What is in your mind..?'
+                // add other props here
+              },
+              null
+            );
+          }),
+          t.insertBefore(e, t.firstChild);
+      })();
+      </script>
+      <app-root></app-root>
+</body>
+</html>

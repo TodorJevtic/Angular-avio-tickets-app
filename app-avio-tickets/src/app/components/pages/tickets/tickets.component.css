@@ -1,0 +1,132 @@
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  font-family: "Quicksand", "sans-serif";
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 25px;
+}
+
+li a{
+  height: 24.5rem;
+  width: 21rem;
+  border: 1px solid var(--primary);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+li a:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+li a img{
+  object-fit: fill;
+  height: 14.5rem;
+  border-bottom: 1px solid var(--primary);
+}
+
+.content{
+  margin-top: 0.3rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  height: 7rem;
+}
+
+.favorite{
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+
+.favorite.not{
+  color: var(--dark);
+}
+
+.stars{
+  margin-bottom: 0.2rem;
+}
+
+.product-item-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.origins{
+  flex: 8;
+}
+
+.origins span{
+  border-radius: 2rem;
+  background-color: var(--primary);
+  display: inline-block;
+  font-size: 0.8rem;
+  color: white;
+  margin-right: 0.3rem;
+  padding: 0 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.cook-time{
+  font-size: 0.9rem;
+  flex: 3;
+  text-align: right;
+  margin-top: 4px;
+}
+.price{
+  left: 0.9rem;
+  padding: 0.7rem 100% 0 0;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.divv{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+input{
+  border-radius: 10rem 0 0 10rem;
+  border: none;
+  height: 3rem;
+  width: 20rem;
+  background-color: #f1f1f1;
+  padding: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.divv button{
+  color: grey;
+  height: 3rem;
+  width: 5rem;
+  font-size: 1rem;
+  border-radius: 0 10rem 10rem 0;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  opacity: 0.8;
+  outline: none;
+}
+
+.divv button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
