@@ -12,8 +12,8 @@ Ukoliko zelite i njega mogu vam ga poslati, javite mi se na mail todorjevtic@gma
 Za pokretanje aplikacije koristimo sledece komande u terminalu.
 
 
-open the terminal inside VSCode then write the below commands following with the ENTER key:
-cd frontend
-npm install --force
-npm start or ng serve
+open the terminal inside VSCode then write the below commands following with the ENTER key:\
+cd frontend\
+npm install --force\
+npm start or ng serve\
 
