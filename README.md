@@ -17,3 +17,5 @@ cd frontend\
 npm install --force\
 npm start or ng serve\
 
+Here is link where you can see a video which represent my project\
+https://drive.google.com/file/d/1lzc27TKRzQ90PrBxgltZ0jSXFptvOhiY/view?usp=sharing<br><br>
